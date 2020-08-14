@@ -1,0 +1,27 @@
+#container {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vh;
+    background: rgb(139, 117, 117);
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.horizontal {
+    box-sizing: border-box;
+    height: calc((1/16) * 100%);
+    width: 100%;
+
+    
+}
+
+.block {
+    box-sizing: border-box;
+    float: left;
+    width: calc((1/16) * 100%);
+    height: 100%;
+    background: rgb(245,245,245);
+    border: 1px solid black;    
+}
+
+ 
+
