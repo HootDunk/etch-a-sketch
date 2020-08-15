@@ -1,6 +1,3 @@
-const container = document.querySelector('#container');
-
-setDimension(40);
 
 function setDimension(dimension) {
     for(let i = 1; i <= dimension; i++){
@@ -21,6 +18,7 @@ function setDimension(dimension) {
     }
 
 }
+
 function removeGrid() {
     let div = container.firstElementChild;
     while (div){
@@ -29,27 +27,59 @@ function removeGrid() {
     }
 }
 
-function changeColor() {
-    event.target.style.background = "#404040";
-    
+function updateGrid(newColor) {
+    const grids = document.querySelectorAll('.block');
+    grids.forEach(grid => grid.addEventListener('mouseover', () => {
+        changeColor(newColor);
+    }));
 }
 
-const grids = document.querySelectorAll('.block');
+function changeColor(color) {
+    event.target.style.background = color;
+}
 
-grids.forEach(grid => grid.addEventListener('mouseover', () => {
-    changeColor();
-}));
 
+function randomColor() {
+    let redValue = Math.floor(Math.random() * 256).toString();
+    let greenValue = Math.floor(Math.random() * 256).toString();
+    let blueValue = Math.floor(Math.random() * 256).toString();
+    let rgbValue = 'rgb(' + redValue + ', ' + greenValue + ', ' + blueValue + ')';
+
+    return rgbValue;
+}
+
+
+//this provides the functionality for the 'reset grid' button
 const clearButton = document.querySelector("#clear-btn");
 clearButton.addEventListener('click', () => {
     let dimension = prompt("Enter a number to set the length & height of the grid: ");
     removeGrid()
-
     setDimension(dimension)
-  
-    const grids = document.querySelectorAll('.block');
-    grids.forEach(grid => grid.addEventListener('mouseover', () => {
-        changeColor();
-    }));  
+    let newColor = colorWell.value;
+    updateGrid(newColor)
 });
 
+let partyMode = false;
+const partyButton = document.querySelector('#party-btn');
+partyButton.addEventListener('click', () => {
+    const grids = document.querySelectorAll('.block');
+    grids.forEach(grid => grid.addEventListener('mouseover', () => {
+        
+        newColor = randomColor();
+        console.log(newColor)
+        changeColor(newColor);
+    }));
+
+});
+
+
+const colorWell = document.querySelector("#colorWell");
+colorWell.addEventListener("change", () => {
+    let newColor = colorWell.value;
+    updateGrid(newColor)
+    
+});
+
+const container = document.querySelector('#container');
+setDimension(30);
+updateGrid("#404040")

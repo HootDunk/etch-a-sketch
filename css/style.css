@@ -47,7 +47,27 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    padding: 3px;
 }
- 
+
+#colorWell {
+    box-sizing: border-box;
+    
+    width: 75px;
+    
+}
+#clear-btn{
+    width: 80px;
+    font-size: 12px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#party-btn{
+    width: 80px;
+    font-size: 12px;
+    height: auto;
+}
+
+
 
