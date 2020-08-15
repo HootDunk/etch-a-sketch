@@ -4,11 +4,6 @@
     width: 90vh;
     margin: 0 auto;
     border: 1px solid black;
-    
-    /* border-left: 25px solid #df0505;
-    border-right: 25px solid #df0505; */
-
-    /* need to fix it when resized horizontally */
 }
 
 .horizontal {
@@ -22,8 +17,6 @@
     height: 100%;
     background: rgb(245,245,245);
     border: 0.1px solid black;
-    
-    
 }
 
 #gridHover {
@@ -31,24 +24,18 @@
 }
 
 #clear-btn {
-    
-    float: left;
-    
+    float: left; 
 }
 
 header {
-    
     height: 5vh;
     width: 100%;
-    /* background: #a18787; */
 }
 
 h1 {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
-    
     font-size: 1.5em;
-    
 }
 
 footer {
@@ -57,12 +44,10 @@ footer {
 }
 
 #button-div{
-    
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    
 }
  
 
