@@ -42,6 +42,7 @@ header {
     width: 100%;
     /* background: #a18787; */
 }
+
 h1 {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
@@ -54,6 +55,7 @@ footer {
     height: 5vh;
     width: 100%;
 }
+
 #button-div{
     
     display: flex;
