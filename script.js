@@ -19,6 +19,11 @@ function changeColor() {
 const grids = document.querySelectorAll('.block');
 grids.forEach(grid => grid.addEventListener('mouseover', changeColor));
 
+const clearButton = document.querySelector("#clear-btn");
+clearButton.addEventListener('click', () => {
+    alert("hello world!");
+});
+
 // const grid = document.querySelector("block");
 
 // grid.addEventListener("mouseover", () => {

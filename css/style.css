@@ -1,10 +1,14 @@
 #container {
     box-sizing: border-box;
-    height: 100vh;
-    width: 100vh;
+    height: 85vh;
+    width: 85vh;
     background: rgb(139, 117, 117);
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-left: 25px solid #df0505;
+    border-right: 25px solid #df0505;
+
+    /* need to fix it when resized horizontally */
 }
 
 .horizontal {
@@ -19,11 +23,30 @@
     width: calc((1/16) * 100%);
     height: 100%;
     background: rgb(245,245,245);
-    border: 1px solid black;    
+    border: 1px solid black;
+    
+    
 }
 
 #gridHover {
     background: black;
+}
+
+#clear-btn {
+    
+    float: left;
+    
+}
+
+header {
+    margin: auto;
+    height: 5vh;
+    width: 85vh;
+    background: #df0505;
+}
+h1 {
+    text-align: center;
+    
 }
 
  
