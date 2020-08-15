@@ -11,6 +11,14 @@ for(let i = 1; i <= 16; i++){
     }    
 }
 
+function changeColor() {
+    event.target.style.background = "#404040";
+    
+}
+
+const grids = document.querySelectorAll('.block');
+grids.forEach(grid => grid.addEventListener('mouseover', changeColor));
+
 // const grid = document.querySelector("block");
 
 // grid.addEventListener("mouseover", () => {

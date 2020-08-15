@@ -6,12 +6,11 @@
     margin: 0 auto;
     border: 1px solid black;
 }
+
 .horizontal {
     box-sizing: border-box;
     height: calc((1/16) * 100%);
-    width: 100%;
-
-    
+    width: 100%;  
 }
 
 .block {
@@ -21,6 +20,10 @@
     height: 100%;
     background: rgb(245,245,245);
     border: 1px solid black;    
+}
+
+#gridHover {
+    background: black;
 }
 
  
