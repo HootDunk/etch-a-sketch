@@ -1,12 +1,14 @@
 #container {
     box-sizing: border-box;
-    height: 85vh;
-    width: 85vh;
+    height: 90vh;
+    width: 90vh;
     background: rgb(139, 117, 117);
     margin: 0 auto;
-    /* border: 1px solid black; */
-    border-left: 25px solid #df0505;
-    border-right: 25px solid #df0505;
+    border: 1px solid black;
+    
+
+    /* border-left: 25px solid #df0505;
+    border-right: 25px solid #df0505; */
 
     /* need to fix it when resized horizontally */
 }
@@ -39,13 +41,16 @@
 }
 
 header {
-    margin: auto;
+    
     height: 5vh;
-    width: 85vh;
-    background: #df0505;
+    width: 100%;
+    /* background: #a18787; */
 }
 h1 {
     text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    
+    font-size: 2em;
     
 }
 
